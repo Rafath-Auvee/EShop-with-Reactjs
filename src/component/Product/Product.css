@@ -7,6 +7,12 @@
   margin: 7px;
 }
 
+p
+{
+  font-family: 'Lato';
+  font-style: normal;
+}
+
 .product{
   width: 300px;
   height: 508px;
@@ -28,8 +34,7 @@
 }
 .product-name
 {
-  font-family: 'Lato';
-  font-style: normal;
+
   font-weight: 400;
   font-size: 21px;
   line-height: 25px;
