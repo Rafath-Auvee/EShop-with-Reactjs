@@ -1,5 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap');
 .product img
 {
   width: 286px;
   height: 286px;
+  border-radius: 8px;
+  margin: 7px;
+}
+
+.product{
+  width: 300px;
+  height: 508px;
+  border: 1px solid #95A0A7;
+  border-radius: 8px;
+ 
+}
+
+.product-info
+{
+  margin-bottom: 0;
+}
+
+.product-info
+{
+  margin: 0px 14px;
+}
+.product-name
+{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.0015em;
+
+  color: #0E161A;
 }
