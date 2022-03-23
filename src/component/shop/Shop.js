@@ -17,7 +17,7 @@ const Shop = () => {
     console.log(product)
 
     const newCart = [...cart, product]
-    setCart.push(newCart)
+    setCart(newCart)
 
   }
   return (
@@ -30,7 +30,7 @@ const Shop = () => {
       </div>
       <div className="cart-container">
         <h1>Order Summary</h1>
-        <p> {setCart.length()} </p> 
+        <p> Total Item {cart.length} </p> 
       </div>
     </div>
   )
