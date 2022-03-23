@@ -12,12 +12,14 @@
   height: 508px;
   border: 1px solid #95A0A7;
   border-radius: 8px;
+  position: relative;
  
 }
 
-.product-info
+.product-info p
 {
   margin-bottom: 0;
+  margin-top: 5px;
 }
 
 .product-info
@@ -41,4 +43,13 @@
   background: #FFE0B3;
   border: none;
   border-radius: 0px 0px 8px 8px;
+  transition: 0.5s;
+  position: absolute;
+  bottom: 0;
+}
+
+.btn-cart:hover
+{
+  background-color: orangered;
+  transition: 0.5s;
 }
