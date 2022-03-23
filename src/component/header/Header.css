@@ -6,3 +6,17 @@
   justify-content: space-between;
   padding: 0px 140px;
 }
+
+.header a{
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  margin: 0px 0px 0px 36px;
+  transition: 0.5s;
+}
+
+.header a:hover
+{
+  color: chartreuse;
+  transition: 0.5s;
+}
