@@ -32,6 +32,11 @@ p
 {
   margin: 0px 14px;
 }
+
+.btn-cart .btn-text
+{
+  margin-right: 5px;
+}
 .product-name
 {
 
@@ -51,6 +56,9 @@ p
   transition: 0.5s;
   position: absolute;
   bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-cart:hover
