@@ -32,6 +32,13 @@
   font-size: 21px;
   line-height: 25px;
   letter-spacing: 0.0015em;
-
   color: #0E161A;
+}
+
+.btn-cart
+{
+  width: 100%;
+  background: #FFE0B3;
+  border: none;
+  border-radius: 0px 0px 8px 8px;
 }
