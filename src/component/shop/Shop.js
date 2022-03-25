@@ -23,17 +23,22 @@ const Shop = () => {
   useEffect(()=>{
 
     console.log("Local Storage first line", products)
+
+    const savedCart = [];
     const storedCart = getStoredCart()
     // console.log(storedCart)
     for(const id in storedCart)
     {
-      const addedProduct = products.find(product => product.id == id)
+      const addedProduct = products.find(product => product.id === id)
       if(addedProduct)
       {
-        console.log(addedProduct)
-
+        const quantity = storedCart[id]
+        addedProduct.quantity = quantity
+        savedCart.push(addedProduct)
+        // console.log(addedProduct)
       }
     }
+    setCart(savedCart)
     console.log("local storage finished")
   } ,[products])
   const handleAddToCart = (product) => {
