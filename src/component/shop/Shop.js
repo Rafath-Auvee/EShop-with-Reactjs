@@ -45,7 +45,7 @@ const Shop = () => {
     // console.log(storedCart)
     for(const id in storedCart)
     {
-      const addedProduct = products.find(product => product.id == = id)
+      const addedProduct = products.find(product => product.id === id)
       if(addedProduct)
       {
         const quantity = storedCart[id]
@@ -57,12 +57,26 @@ const Shop = () => {
     setCart(savedCart)
     console.log("local storage finished")
   } ,[products])
-  const handleAddToCart = (product) => {
-    // console.log(product)
+  const handleAddToCart = (selectedProduct) => {
 
-    const newCart = [...cart, product]
+    let newCart = []
+    // console.log(selectedProduct)
+    const exists = cart.find(product => product.id === selectedProduct.id)
+
+    if(!exists)
+    {
+      selectedProduct.quantity = 1
+      newCart = [...cart, selectedProduct]
+    }
+    else
+    {
+      const rest = cart.filter(product => product.id !== selectedProduct.id) 
+      exists.quantity = exists.quantity + 1
+      newCart = [...rest, exists]
+    }
+    // const newCart = [...cart, selectedProduct]
     setCart(newCart)
-    addToDb(product.id)
+    addToDb(selectedProduct.id)
 
   }
   return (
