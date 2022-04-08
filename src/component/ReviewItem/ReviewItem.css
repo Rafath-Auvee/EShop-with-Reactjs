@@ -4,4 +4,40 @@
     padding: 8px;
     margin-top: 21px;
     width: 571px;
+    display: flex;
+}
+
+.review-item img{
+    width: 91px;
+}
+
+.review-item-details p{
+    margin: 0;
+}
+
+.review-item-details-container
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-item .delete-container
+{
+    display: flex;
+    align-items: center;
+}
+
+.review-item .delete-button
+{
+    background: rgba(214, 28, 28, 0.301);
+    border: 0;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+.delete-icon
+{
+    color: red;
+    font-size: 27px;
 }
