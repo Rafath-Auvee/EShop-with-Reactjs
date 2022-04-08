@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { removeFromDb } from "../../utilities/fakedb";
 import Cart from "../Cart/Cart";
 import useCart from "../hooks/useCart";
 import ReviewItem from "../ReviewItem/ReviewItem";
 
 import useProducts from "./../hooks/useProducts";
+
+import "./Order.css"
 
 const Order = () => {
   const [products, setProducts] = useProducts();
@@ -31,7 +34,11 @@ const Order = () => {
         </div>
 
         <div className="cart-container">
-          <Cart cart={cart} />
+          <Cart cart={cart} > 
+            <Link to="/inventory">
+              <button>Proceed Checkout</button>
+            </Link>
+          </Cart>
         </div>
       </div>
     </div>
