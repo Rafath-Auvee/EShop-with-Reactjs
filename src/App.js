@@ -4,6 +4,7 @@ import Shop from "./component/shop/Shop";
 import { Routes, Route } from "react-router-dom";
 import Order from "./component/Order/Order";
 import Inventory from "./component/Inventory/Inventory";
+import About from "./component/About/About";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/Shop" element={<Shop />} />
           <Route path="/orders" element={<Order />} />
           <Route path="/inventory" element={<Inventory />} />
+          <Route path="/about" element={<About />} />
         </Route>
       </Routes>
     </div>

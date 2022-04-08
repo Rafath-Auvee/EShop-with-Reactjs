@@ -1,9 +1,13 @@
 import React from 'react';
 
+import useProducts from "./../hooks/useProducts";
+
 const Order = () => {
+
+  const [products, setProducts] = useProducts();
   return (
     <div>
-      This is order page
+      <h1>Product length {products.length}</h1>
     </div>
   );
 };
