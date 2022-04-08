@@ -1,4 +1,4 @@
 # Eshop 
 
 # Live Link
-eshop-auvee.netlify.app
+https://eshop-auvee.netlify.app/
