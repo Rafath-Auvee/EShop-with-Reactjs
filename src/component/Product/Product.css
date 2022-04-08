@@ -50,7 +50,7 @@ p
 .btn-cart
 {
   width: 100%;
-  background: #FFE0B3;
+  background: #5B86D8;
   border: none;
   border-radius: 0px 0px 8px 8px;
   transition: 0.5s;
@@ -63,7 +63,7 @@ p
 
 .btn-cart:hover
 {
-  background-color: orangered;
+  background-color: #234182;
   transition: 0.5s;
   color: aliceblue;
 }
