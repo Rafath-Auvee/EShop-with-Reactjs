@@ -9,14 +9,14 @@ const Cart = (props) => {
   for(const product of cart)
   {
     quantity = quantity + product.quantity
-    total = total + product.price
+    total = total + product.price * product.quantity;
     shipping = shipping + product.shipping
   }
 
   const tax = parseFloat((total * 0.1).toFixed(2));
   let grandTotal = 0
   grandTotal = grandTotal + tax + total
-  // console.log(cart)
+
   return (
     <div className="cart">
         <h1>Order Summary</h1>
@@ -31,3 +31,5 @@ const Cart = (props) => {
 };
 
 export default Cart;
+
+
