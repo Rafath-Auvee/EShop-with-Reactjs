@@ -15,10 +15,10 @@ const Shop = () => {
   const [size, setSize] = useState(10);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch(`http://localhost:5000/products?page=${page}&size=${size}`)
       .then((res) => res.json())
       .then((data) => setProducts(data));
-  }, []);
+  }, [page, size]);
   useEffect(() => {
     fetch("http://localhost:5000/productcount")
       .then((res) => res.json())
@@ -63,6 +63,7 @@ const Shop = () => {
   };
 
   return (
+    
     <div className="shop-container">
       <div className="products-container">
         {products.map((product) => (
@@ -78,8 +79,7 @@ const Shop = () => {
               className={page === number ? "selected" : ""}
               onClick={() => setPage(number)}
             >
-              {" "}
-              {number + 1}{" "}
+              {number + 1}
             </button>
           ))}
           <select onChange={(e) => setSize(e.target.value)}>
